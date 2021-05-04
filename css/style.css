@@ -1,0 +1,249 @@
+body,html{
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+html{
+    display: unset;
+}
+body{
+    
+    background:rgb(94, 94, 94);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header{
+    height: 90px;
+    /* border-color:black; */
+    background-color:rgb(170, 125, 125);
+    z-index: 2; 
+     border-style: solid;
+   
+}
+#logo {
+  width: 330px;
+  height: 86px;
+  display: block;
+  float: left;
+  margin-left: 35%;
+  cursor: pointer;
+  text-indent: -9999em;
+  background: url(../images/logo.jpg) no-repeat;
+}
+
+.logo{
+    margin-top: 10px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3em;
+    margin-left: 40%;
+    width: max-content;   
+}
+
+@media screen and (max-width:768px){
+    
+     
+}
+  @media screen and (max-width:375px){
+      .logo{
+        margin-left:70px;
+      }
+      .header{
+          max-width: 100%;
+      }
+  }
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: max-content;
+    margin-left: 40px;
+    margin-top: 20px;
+    border-style: solid;
+    font-size: 12px;
+    
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+    background: rgb(170, 125, 125);
+    width: 220px;
+    height: 100px;
+    overflow: hidden;
+  }
+  
+  .image{
+      height: 300px;
+      width: 253px;
+  }
+
+  .main{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  }
+
+  @media screen and (max-width:1024px){
+    .main{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-left: 50px;
+    }
+}
+
+  @media screen and (max-width:768px){
+    .main{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-left: 50px;
+    }
+}
+  @media screen and (max-width:425px){
+      .main{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 65px;
+      }
+  }
+  @media screen and (max-width:375px){
+    .main{
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-left: 40px;
+    }
+}
+@media screen and (max-width:320px){
+    .main{
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-left: 10px;
+    }
+}
+#footer{
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: rgb(2, 0, 0);
+  text-align: left;
+
+
+}
+
+/* The Modal (background) */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 500px;
+  height: 200px;
+  z-index: 2;
+  border-radius: 20px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#create-post {
+  height: 50px;
+  width: 500px;
+  font-size: 30px;
+  font-family: cursive;
+  margin-bottom: 1em;
+}
+.add-movie {
+  height: 30px;
+  width: 200px;
+  margin-right: 10px;
+  border-radius: 20px;
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+.addMovie {
+  height: 30px;
+  width: 200px;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: #343a40;
+  
+  color: #f8f9fa;
+}
+
+.search{
+  /* margin-left: 170%; */
+}
+
+
+
+  @media screen and (max-width:1024px){
+    .main{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-left: 50px;
+    }
+}
+
+  @media screen and (max-width:768px){
+    .main{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-left: 50px;
+    }
+}
+  @media screen and (max-width:425px){
+      .main{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 65px;
+      }
+  }
+  @media screen and (max-width:375px){
+    .main{
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-left: 40px;
+    }
+}
+@media screen and (max-width:320px){
+    .main{
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-left: 10px;
+    }
+}
+
+#art{
+  display: none;
+}

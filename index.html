@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieDB</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="css/script.js"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html" id="logo" title="MoviesDB"></a>
+    </div>
+    <div class="main">
+        <div class="card">
+            <img src="images/conjuring.jpg" class="image" alt="cojuring">
+            <div class="container">
+                <h4><b>Conjuring</b></h4>
+                <button type="button">Preview</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/fast1.jpg" class="image" alt="The Fast And The Furious">
+            <div class="container">
+                <h4><b>The Fast And The Furious</b></h4>
+                <button type="button">Preview</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/harrypotter.jpg" class="image" alt="Harry Potter">
+            <div class="container">
+                <h4><b>Harry Potter and the Sorcerer's Stone</b></h4>
+                <button type="button">Preview</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/insidious.jpg" class="image" alt="Insidious">
+            <div class="container">
+                <h4><b>Insidious</b></h4>
+                <button type="button">Preview</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/ipman.jpg" class="image" alt="IP Man">
+            <div class="container">
+                <h4><b>IP Man</b></h4>
+                <button type="button">Preview</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/johnwick.jpg" class="image" alt="John Wick">
+            <div class="container">
+                <h4><b>John Wick</b></h4>
+                <button type="button">Preview</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/mortalcombat.png" class="image" alt="Mortal Kombat">
+            <div class="container">
+                <h4><b>Mortal Kombat</b></h4>
+                <button type="button">Preview</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/rambo.jpg" class="image" alt="Rambo">
+            <div class="container">
+                <h4><b>Rambo</b></h4>
+                <button type="button">Preview</button>
+               
+            </div>
+        </div>
+        <div class="card" id="art">
+            <img id="movieimg" class="image" alt="Rambo">
+            <div class="container">
+                <h4><b id="title">Rambo</b></h4>
+                
+            </div>
+        </div>
+    </div>
+    <div class="search">
+
+        <button class="addMovie" id="myBtn">Add new Movie</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="create-post">
+                    <input type="text" id="addmovie" v-model="text" placeholder="Enter The Movie Name" />
+                    <br />
+                    <button class="add-movie" onclick="getapidata()">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <p class="copy">Copyright 2021 MoviesDB. All rights reserved.</p>
+        
+
+    </footer>
+
+
+</body>
+
+</html>
